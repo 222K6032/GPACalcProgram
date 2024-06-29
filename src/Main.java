@@ -10,10 +10,10 @@ public class Main {
         int[] array_g;
         double G;
         double g;
+        arrayG = lastyear_unit();
+        G = lastyear_calc(arrayG);
         while (true) {
-            arrayG = lastyear_unit();
             array_g = thisyear_unit();
-            G = lastyear_calc(arrayG);
             g = thisyear_calc(arrayG, array_g);
             if (g != -1.00) { // -1.00は単位数が多すぎることを示す値
                 break;
