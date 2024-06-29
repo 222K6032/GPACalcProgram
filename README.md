@@ -15,27 +15,31 @@ This program is designed to calculate the GPA (Grade Point Average) of students 
 ### Run in Console
 
 1. **Clone the repository**:
+
     ```bash
     git clone https://github.com/222k6032/GPACalcProgram.git
     cd GPACalcProgram
     ```
 
 2. **Compile the Java program**:
+
     ```bash
     javac GPACalcProgram.java
     ```
 
 3. **Run the program**:
+
     ```bash
     java GPACalcProgram
     ```
 
 ### Run in Console Quickly
 
-1.  **Clone the repository or Download the Code zip file**:
+1. **Clone the repository or Download the Code zip file**:
 
     This is the hierarchical structure of the files.
-    ```md
+
+    ```tree
     GPACalcProgram
     ├──.vscod
     │   └──setting.json
@@ -50,14 +54,15 @@ This program is designed to calculate the GPA (Grade Point Average) of students 
     └──StartGPACalc.bat
     ```
 
-2.  **Run the StartGPACalc.bat**:
+2. **Run the StartGPACalc.bat**:
 
-    
-    ```md
+    ```tree
     GPACalcProgram
     ├──.vscod
     │   └──setting.json
     ├──bin
+    │   └──Unnecessary file ×5
+    ├──classes
     │   └──Main.class
     ├──lib
     │   └──Unnecessary file ×5
@@ -65,7 +70,7 @@ This program is designed to calculate the GPA (Grade Point Average) of students 
     │   └──
     ├──LICENSE
     ├──README.md
-    └──*StartGPACalc.bat*
+    └──ＳｔａｒｔＧＰＡＣａｌｃ.bat
     ```
 
 ## Usage
@@ -73,7 +78,8 @@ This program is designed to calculate the GPA (Grade Point Average) of students 
 1. When you run the program, you will be prompted to enter the number of credits for each grade obtained from enrollment until the previous year.
     - Input should be in half-width digits and positive integers.
     - Example:
-        ```
+
+        ```terminal
         入学してから前年度までに取得した成績のそれぞれの単位数を半角数字で入力してください(単位認定は秀とは別に入力する)
         秀：11
         優：6
@@ -84,7 +90,8 @@ This program is designed to calculate the GPA (Grade Point Average) of students 
 
 2. Next, you will be prompted to enter the target number of credits for each grade for the current year.
     - Example:
-        ```
+
+        ```terminal
         今年度の取得を目標とする成績のそれぞれの単位数を半角数字で入力してください(単位認定は秀とは別に入力する)
         秀：18
         優：10
@@ -95,7 +102,8 @@ This program is designed to calculate the GPA (Grade Point Average) of students 
 
 3. The program will then calculate and display the GPA from enrollment until the previous year and the target GPA for the current year.
     - Example output:
-        ```
+
+        ```cmd
         入学してから前年度までの GPA: 3.25
         今年度の取得を目標としている GPA: 3.32
         ```
