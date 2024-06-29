@@ -6,13 +6,19 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int[] arrayG = lastyear_unit();
-        int[] array_g = thisyear_unit();
-        double G = lastyear_calc(arrayG);// 3.25
-        double g = thisyear_calc(arrayG, array_g);// 3.32
-        if (g == 0.00) {
-            System.out.println("単位数が多すぎます、もう一度入力してください。");
-            return;
+        int[] arrayG;
+        int[] array_g;
+        double G;
+        double g;
+        while (true) {
+            arrayG = lastyear_unit();
+            array_g = thisyear_unit();
+            G = lastyear_calc(arrayG);
+            g = thisyear_calc(arrayG, array_g);
+            if (g != -1.00) { // -1.00は単位数が多すぎることを示す値
+                break;
+            }
+            System.out.println("入力する単位数が多すぎます、もう一度入力してください。");
         }
         print_result(G, g);
         // Debug
@@ -36,7 +42,7 @@ public class Main {
             } else {
                 System.out.println("正の整数で入力してください");
             }
-            
+
         }
         while (true) {
             Scanner scan = new Scanner(System.in);
@@ -51,7 +57,7 @@ public class Main {
             } else {
                 System.out.println("正の整数で入力してください");
             }
-            
+
         }
         while (true) {
             Scanner scan = new Scanner(System.in);
@@ -66,7 +72,7 @@ public class Main {
             } else {
                 System.out.println("正の整数で入力してください");
             }
-            
+
         }
         while (true) {
             Scanner scan = new Scanner(System.in);
@@ -81,7 +87,7 @@ public class Main {
             } else {
                 System.out.println("正の整数で入力してください");
             }
-            
+
         }
         while (true) {
             Scanner scan = new Scanner(System.in);
@@ -96,7 +102,7 @@ public class Main {
             } else {
                 System.out.println("正の整数で入力してください");
             }
-            
+
         }
         while (true) {
             Scanner scan = new Scanner(System.in);
@@ -154,7 +160,7 @@ public class Main {
             } else {
                 System.out.println("正の整数で入力してください");
             }
-            
+
         }
         while (true) {
             Scanner scan = new Scanner(System.in);
@@ -169,7 +175,7 @@ public class Main {
             } else {
                 System.out.println("正の整数で入力してください");
             }
-            
+
         }
         while (true) {
             Scanner scan = new Scanner(System.in);
@@ -184,7 +190,7 @@ public class Main {
             } else {
                 System.out.println("正の整数で入力してください");
             }
-            
+
         }
         while (true) {
             Scanner scan = new Scanner(System.in);
@@ -199,7 +205,7 @@ public class Main {
             } else {
                 System.out.println("正の整数で入力してください");
             }
-            
+
         }
         while (true) {
             Scanner scan = new Scanner(System.in);
@@ -214,7 +220,7 @@ public class Main {
             } else {
                 System.out.println("正の整数で入力してください");
             }
-            
+
         }
         int[] thisscore;
         thisscore = new int[6];
@@ -247,7 +253,7 @@ public class Main {
         if (!((array_g[0]/* s */ + array_g[1]/* a */ + array_g[2]/* b */ + array_g[3]/* c */
                 + array_g[4]/* f */) <= 48))// s+a+b+c+fは48単位以下
         {
-            return 0.00;// 0.00を返す
+            return -1.00;// 0.00を返す
         } else {
             double g = ((arrayG[0]/* S */ + array_g[0]/* s */ + arrayG[5]/* T */ + array_g[5]/* t */)
                     + (arrayG[1]/* A */ + array_g[1]/* a */) + (arrayG[2]/* B */ + array_g[2]/* b */)
