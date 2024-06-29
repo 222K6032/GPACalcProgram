@@ -1,0 +1,10 @@
+public class Lastyear_calc{
+	public static double lastyear_calc(double[]  array){
+		//配列名はarrayでお願いします
+		int G = (array[S]+array[T])+array[A]+array[B]+array[C]+array[F];
+		if(G == 0){
+			return 0.00;
+		}
+		return(4.0*(array[S]+array[T])+3.0*array[A]+2.0*array[B]+1.0*array[C]+0.0*array[F])/G
+	}
+}

@@ -1,0 +1,90 @@
+public static int thisyear_unit{
+	System.out.println("今年度の目標とする成績のそれぞれの単位数を半角数字で入力してください(単位認定とは別に入力する)");
+	Scanner sc=new Scanner(System.in);
+	While(true){
+		System.out.println("秀:");
+		strs=scan.nextLine();
+		if(Character.isDight(str.charAt(strs))){
+			int s=Int.parseInt(strs);
+			if(s>=0){
+				break;
+			}
+			else{
+				System.out.println("正の整数で入力してください");
+			}
+		}
+	}
+	While(true){
+		System.out.println("優:");
+		stra=scan.nextLine();
+		if(Character.isDight(str.charAt(stra))){
+			int a=Int.parseInt(stra);
+			if(a>=0){
+				break;		
+			}
+			else{
+				System.out.println("正の整数で入力してください");
+			}
+		}
+	}
+	While(true){
+		System.out.println("良:");
+		strb=scan.nextLine();
+		if(Character.isDight(str.charAt(strb))){
+			int b=Int.parseInt(strb);
+			if(b>=0){
+				break;		
+			}
+			else{
+				System.out.println("正の整数で入力してください");
+			}
+		}
+	}
+	While(true){
+		System.out.println("可:");
+		strc=scan.nextLine();
+		if(Character.isDight(str.charAt(strc))){
+			int c=Int.parseInt(strc);
+			if(c>=0){
+				break;		
+			}
+			else{
+				System.out.println("正の整数で入力してください");
+			}
+		}
+	}
+	While(true){
+		System.out.println("不可:");
+		strf=scan.nextLine();
+		if(Character.isDight(str.charAt(strf))){
+			int f=Int.parseInt(strf);
+			if(f>=0){
+				break;		
+			}
+			else{
+				System.out.println("正の整数で入力してください");
+			}
+		}
+	}
+	While(true){
+		System.out.println("単位認定:");
+		strt=scan.nextLine();
+		if(Character.isDight(str.charAt(strt))){
+			int t=Int.parseInt(strt);
+			if(t>=0){
+				break;		
+			}
+			else{
+				System.out.println("正の整数で入力してください");
+			}
+		}
+	}
+	int [] thisscore;
+	thisscore new int[6];
+	thisscore[0]=s;
+	thisscore[1]=a;
+	thisscore[2]=b;
+	thisscore[3]=c;
+	thisscore[4]=f;
+	thisscore[5]=t;
+	return thisscore;

@@ -1,0 +1,105 @@
+import java.util.Scanner;
+public static int thistyear_unit{
+		int s,a,b,c,f,t;
+		System.out.println("入学してから前年度までに取得している成績ごとの単位数を入力してください(単位認定とは別に入力する)");
+		while(true){
+			Scanner scan=new Scanner(System.in);
+			System.out.print("秀:");
+			if(scan.hasNextInt()){
+				S=scan.nextInt();
+				if(s>=0){
+					break;
+				}
+				else{
+					System.out.println("正の整数で入力してください");
+				}
+			}else{
+			System.out.println("正の整数で入力してください");
+			}
+		}
+		while(true){
+			Scanner scan=new Scanner(System.in);
+			System.out.print("優:");
+			if(scan.hasNextInt()){
+				a=scan.nextInt();
+				if(a>=0){
+					break;
+				}
+				else{
+					System.out.println("正の整数で入力してください");
+				}
+			}else{
+			System.out.println("正の整数で入力してください");
+			}
+		}
+		while(true){
+			Scanner scan=new Scanner(System.in);
+			System.out.print("良:");
+			if(scan.hasNextInt()){
+				b=scan.nextInt();
+				if(b>=0){
+					break;
+				}
+				else{
+					System.out.println("正の整数で入力してください");
+				}
+			}else{
+			System.out.println("正の整数で入力してください");
+			}
+		}
+		while(true){
+			Scanner scan=new Scanner(System.in);
+			System.out.print("可:");
+			if(scan.hasNextInt()){
+				c=scan.nextInt();
+				if(c>=0){
+					break;
+				}
+				else{
+					System.out.println("正の整数で入力してください");
+				}
+			}else{
+			System.out.println("正の整数で入力してください");
+			}
+		}
+		while(true){
+			Scanner scan=new Scanner(System.in);
+			System.out.print("不可:");
+			if(scan.hasNextInt()){
+				f=scan.nextInt();
+				if(f>=0){
+					break;
+				}
+				else{
+					System.out.println("正の整数で入力してください");
+				}
+			}else{
+			System.out.println("正の整数で入力してください");
+			}
+		}
+		while(true){
+			Scanner scan=new Scanner(System.in);
+			System.out.print("単位認定:");
+			if(scan.hasNextInt()){
+				t=scan.nextInt();
+				if(t>=0){
+					break;
+				}
+				else{
+					System.out.println("正の整数で入力してください");
+				}
+			}else{
+			System.out.println("正の整数で入力してください");
+			}
+		}
+		int[] thisscore;
+		thisscore=new int[6];
+		thisscore[0]=s;
+		thisscore[1]=a;
+		thisscore[2]=b;
+		thisscore[3]=c;
+		thisscore[4]=f;
+		thisscore[5]=t;
+		return thisscore;
+	}
+}

@@ -1,0 +1,14 @@
+public class Thisyear_calc
+{
+	public static double Thisyear_calc(int S,int s,int T,int t,int A,int a,int B,int b,int C,int c,int F,int f)
+			if((s+a+b+c+f)<=48)
+	{
+		double g =(double){4*(S+s+T+t)*3*(A+a)+2*(B+b)+1*(C+c)+0*(F+f)}/(S+s+T+t)+(A+a)+(B+b)+(C+c)+(F+f);
+		return(double(g))
+	}
+	else
+	{
+		System.out.println("入力する単位数が多すぎます、もう一度入力してください");
+		return;
+	}
+}

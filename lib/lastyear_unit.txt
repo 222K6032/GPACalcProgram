@@ -1,0 +1,91 @@
+public static int lastyear_unit{
+	System.out.println("入学してから前年度までに取得している成績ごとの単位数を入力してください(単位認定とは別に入力する)");
+	Scanner sc=new Scanner(System.in);
+	While(true){
+		System.out.println("秀:");
+		strS=scan.nextLine();
+		if(Character.isDight(str.charAt(strS))){
+			int S=Int.parseInt(strS);
+			if(S>=0){
+				break;
+			}
+			else{
+				System.out.println("正の整数で入力してください");
+			}
+		}
+	}
+	While(true){
+		System.out.println("優:");
+		strA=scan.nextLine();
+        for(int i=0;i<strA.length();i++){
+		if(Character.isDight(strA.charAt(i))){
+			char A = strA.charAt(i);
+			if(A>=0){
+				break;		
+			}
+			else{
+				System.out.println("正の整数で入力してください");
+			}
+		}
+	}
+	While(true){
+		System.out.println("良:");
+		strB=scan.nextLine();
+		if(Character.isDight(str.charAt(strB))){
+			int B=Int.parseInt(strB);
+			if(B>=0){
+				break;		
+			}
+			else{
+				System.out.println("正の整数で入力してください");
+			}
+		}
+	}
+	While(true){
+		System.out.println("可:");
+		strC=scan.nextLine();
+		if(Character.isDight(str.charAt(strC))){
+			int C=Int.parseInt(strC);
+			if(C>=0){
+				break;		
+			}
+			else{
+				System.out.println("正の整数で入力してください");
+			}
+		}
+	}
+	While(true){
+		System.out.println("不可:");
+		strF=scan.nextLine();
+		if(Character.isDight(str.charAt(strF))){
+			int F=Int.parseInt(strA);
+			if(F>=0){
+				break;		
+			}
+			else{
+				System.out.println("正の整数で入力してください");
+			}
+		}
+	}
+	While(true){
+		System.out.println("単位認定:");
+		strT=scan.nextLine();
+		if(Character.isDight(str.charAt(strT))){
+			int T=Int.parseInt(strT);
+			if(T>=0){
+				break;		
+			}
+			else{
+				System.out.println("正の整数で入力してください");
+			}
+		}
+	}
+	int [] score;
+	score new int[6];
+	score[0]=S;
+	score[1]=A;
+	score[2]=B;
+	score[3]=C;
+	score[4]=F;
+	score[5]=T;
+	return score;

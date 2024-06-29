@@ -12,6 +12,8 @@ This program is designed to calculate the GPA (Grade Point Average) of students 
 
 ## Installation
 
+### Run in Console
+
 1. **Clone the repository**:
     ```bash
     git clone https://github.com/222k6032/GPACalcProgram.git
@@ -26,6 +28,44 @@ This program is designed to calculate the GPA (Grade Point Average) of students 
 3. **Run the program**:
     ```bash
     java GPACalcProgram
+    ```
+
+### Run in Console Quickly
+
+1.  **Clone the repository or Download the Code zip file**:
+
+    This is the hierarchical structure of the files.
+    ```md
+    GPACalcProgram
+    ├──.vscod
+    │   └──setting.json
+    ├──bin
+    │   └──Main.class
+    ├──lib
+    │   └──Unnecessary file ×5
+    ├──src
+    │   └──
+    ├──LICENSE
+    ├──README.md
+    └──StartGPACalc.bat
+    ```
+
+2.  **Run the StartGPACalc.bat**:
+
+    
+    ```md
+    GPACalcProgram
+    ├──.vscod
+    │   └──setting.json
+    ├──bin
+    │   └──Main.class
+    ├──lib
+    │   └──Unnecessary file ×5
+    ├──src
+    │   └──
+    ├──LICENSE
+    ├──README.md
+    └──*StartGPACalc.bat*
     ```
 
 ## Usage
