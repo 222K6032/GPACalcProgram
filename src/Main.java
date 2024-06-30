@@ -6,12 +6,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int[] arrayG;
+        int[] arrayG = lastyear_unit();
+        double G = lastyear_calc(arrayG);
+
         int[] array_g;
-        double G;
         double g;
-        arrayG = lastyear_unit();
-        G = lastyear_calc(arrayG);
         while (true) {
             array_g = thisyear_unit();
             g = thisyear_calc(arrayG, array_g);
